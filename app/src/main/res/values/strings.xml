@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ChatGPT_AuditLogs</string>
+    <string name="android_chatgpt_app">Android ChatGPT App</string>
+    <string name="prompt">Prompt:</string>
+</resources>
