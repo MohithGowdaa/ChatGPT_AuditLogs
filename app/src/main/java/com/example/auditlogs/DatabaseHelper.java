@@ -28,13 +28,12 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     private static final int DATABASE_VERSION = 1;
     private static final String DATABASE_NAME = "AuditLogs.db";
-    private static final String ENCRYPTION_KEY = "your_encryption_key_here"; // Replace with actual key or use BuildConfig.ENCRYPTION_KEY if defined
-
+    private static final String ENCRYPTION_KEY = "your_encryption_key_here";
     private final String TAG = DatabaseHelper.class.getSimpleName();
 
     public DatabaseHelper(@NonNull Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
-        SQLiteDatabase.loadLibs(context); // Important for SQLCipher's native libraries loading
+        SQLiteDatabase.loadLibs(context);
     }
 
     @Override
@@ -45,7 +44,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-        // Handle database version upgrades here
+
     }
 
     @Nullable
